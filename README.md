@@ -1,2 +1,37 @@
-# foap
-Unofficial Foap API
+# Foap API
+
+![FOAP](https://user-images.githubusercontent.com/17960677/102477690-af8b4c00-4082-11eb-824c-8a0527b514dd.png)
+
+>**Unofficial Foap API**
+
+## Contributing
+
+Thank you for your interest in contributing, If you feel like there's something missing or any new feature can be added, just create a PR and I will see the rest.
+
+## Help
+
+You can contact me on social media, Everything about me can be found [here](https://theabbie.github.io)
+
+## Installation
+
+### Requirements
+
+* Node.Js installed
+
+### Dev Dependencies
+
+* Axios
+* Form-Data
+
+## Credits
+
+* [FOAP](https://foap.com) For Creating an excellent Platform.
+
+## Contact
+
+Contact me anywhere, just visit [my portfolio](https://theabbie.github.io)
+
+## License
+
+This project is licensed under MIT License, See [LICENSE](/LICENSE) for more information
+

@@ -1,0 +1,28 @@
+{
+  "name": "foap",
+  "version": "1.0.0",
+  "description": "Unofficial Foap API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'working'"
+  },
+  "funding": "https://theabbie.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theabbie/foap.git"
+  },
+  "keywords": [
+    "foap",
+    "theabbie"
+  ],
+  "author": "theabbie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theabbie/foap/issues"
+  },
+  "homepage": "https://github.com/theabbie/foap#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "form-data": "^3.0.0"
+  }
+}
