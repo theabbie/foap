@@ -4,6 +4,23 @@
 
 >**Unofficial Foap API**
 
+## Example
+
+The Following Code snippet will help you understand how to use this.
+
+```js
+var Foap = require("foap");
+var foap = new Foap();
+
+(async function() {
+  await foap.login("email@example.com","password");
+  // or
+  foap.addToken(token) // recommended
+
+  await foap.upload("path_to_image","caption",["tags"]);
+})();
+```
+
 ## Contributing
 
 Thank you for your interest in contributing, If you feel like there's something missing or any new feature can be added, just create a PR and I will see the rest.
