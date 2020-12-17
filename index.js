@@ -29,6 +29,34 @@ module.exports = class Foap {
   addToken(token) {
     this.token = token;
   }
+  
+  async getRandom(n) {
+    var posts = await axios({
+      url: this.root + '/photos/random?limit=' + (n || 10) + '&access_token=' + this.token
+    });
+    return posts.data;
+  }
+
+  async getProfile(id,page) {
+    var profile = await axios({
+      url: this.root + '/users/' + id + '/photos?access_token=' + this.token + '&page=' + (page || 1) + '&order%5Bcreated_at%5D=desc&statuses%5B%5D=on_market&statuses%5B%5D=in_mission&force_cache_miss=true'
+    });
+    return profile.data;
+  }
+  
+  async rate(id,rating) {
+    var res = await axios({
+      url: this.root + '/photos/' + id + '/ratings',
+      method: 'POST',
+      data: {
+        "access_token": this.token,
+        "rating": {
+          "value": rating || 5
+        }
+      }
+    });
+    return res.data;
+  }
 
   async upload(path,caption,tags) {
     var data = new fd();
