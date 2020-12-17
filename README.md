@@ -18,6 +18,13 @@ var foap = new Foap();
   foap.addToken(token) // recommended
 
   await foap.upload("path_to_image","caption",["tags"]);
+  // Upload An Image
+
+  await foap.getRandom(n); // get n random posts
+
+  await foap.getProfile(id); // get Profile by ID
+
+  await foap.rate(image_id); // Rate an image
 })();
 ```
 
