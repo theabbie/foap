@@ -25,4 +25,20 @@ module.exports = class Foap {
     this.username = token.data.user.username;
     return token.data;
   }
+
+  addToken(token) {
+    this.token = token;
+  }
+
+  async upload(path) {
+    var data = new fd();
+    data.append("photo[image_attachment]",fs.createReadStream(path));
+    var res = await axios({
+      url: this.root + '/photos?access_token=' + this.token,
+      method: 'POST',
+      data: data,
+      headers: data.getHeaders()
+    });
+    return res.data;
+  }
 }
